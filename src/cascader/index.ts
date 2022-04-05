@@ -1,4 +1,5 @@
 import _Cascader from './cascader';
+import _CascaderPanel from './cascader-panel';
 import mapProps from '../utils/map-props';
 import { withInstall, WithInstallType } from '../utils/withInstall';
 
@@ -15,4 +16,6 @@ export const Cascader: WithInstallType<typeof _Cascader> = withInstall(
     },
   ])(_Cascader),
 );
+export const CascaderPanel: WithInstallType<typeof _CascaderPanel> = withInstall(_CascaderPanel);
+
 export default Cascader;
